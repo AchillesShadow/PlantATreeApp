@@ -1,0 +1,32 @@
+Tree ID: Fruit-3
+Tree catergory:Fruit-YEN BEN
+AVAILABILITY：AVAILABLE
+SUITABILITY：All
+PRICE : $120.00(1.4m)
+Dark green leaves and a good bearer of fruit.
+
+Tree ID: Fruit-4
+Tree catergory:Fruit-BLACK BOY
+AVAILABILITY：UNAVAILABLE
+SUITABILITY：All
+PRICE : $ 120.00 ( 2 - 2.5m)
+Port wine flesh, red to black skin. Very sweet and juicy.
+Shows resistance to leaf curl
+
+Tree ID: Evergreen-2
+Tree catergory:Evergreen-Queensland kauri
+AVAILABILITY : AVAILABLE
+SUITABILITY: Hardy
+PRICE ：$3590.00 (9m) 
+
+Tree ID: NZ_Native-2
+Tree catergory:NZ_Native-Golden
+AVAILABILITY : AVAILABLE
+SUITABILITY: All
+PRICE :  $120.00 (2m)
+
+Tree ID: PALM-2
+Tree catergory:PALM-Kwemadec Nikau
+AVAILABILITY : UNAVAILABLE
+SUITABILITY: SHEITER
+PRICE :  $350.00 (1-1.5m)

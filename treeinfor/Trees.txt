@@ -1,0 +1,29 @@
+Tree ID: Evergreen-1
+Tree catergory:Evergreen-titoki 
+PRICE :$115(1.5-2m) 
+PRICE :PRICE :$250(2.5m)
+
+Tree ID: NZ_Native-1
+Tree catergory:NZ_Native kauri
+PRICE :$120(2.5m)
+
+Tree ID: PALM-1
+Tree catergory:PALM Queenpalm
+PRICE :$120(2-2.5m) 
+
+Tree ID:Fruit-1
+Tree catergory:Fruit-Apple1-ROYAL GALA (SEMI DWARF)
+AVAILABILITY : AVAILABLE
+SUITABILITY: All
+PRICE 1:$120.00 (2m)
+Sweet and juicy flavour,good crisp eating apple.
+Regular and reliable.
+
+Tree ID:Fruit-2
+Tree catergory:Fruit-Apple2-BRAEBURN SEMI DWARF
+AVAILABILITY : UNAVAILABLE
+SUITABILITY: All
+PRICE : $120.00 (1.5-2m)
+Sweet and tangy eating. Good heavy cropper.
+
+

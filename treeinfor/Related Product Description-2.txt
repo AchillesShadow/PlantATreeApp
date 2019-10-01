@@ -1,0 +1,23 @@
+ProductID:Product-4
+Product Name:Fruit Fly BarPro
+Fruit Fly BarPro is fruit fly control and prevention product.
+Controlled of flies, cockroaches, spider mites, gnats, mosquitoes, spiders, moths, silverfish, earwigs and beetles.
+Simply open the foil pouch, place directly above the site, and allow the vapors to sink into every crevice and crack.
+Price:$9.93
+
+ProductID:Product-5
+Product Name:VIVOSUN 6.5 Inch Gardening Hand Pruner Pruning Shear 
+Reduce hand strain
+Ultra sharp blades
+Make precise cuts
+Secure, easy to operate lock
+Price:$9.82
+
+ProductID:Product-6
+Product Name:Flowtron BK-40D Electronic Insect Killer
+Advanced Electronic Insect Control
+Non Clogging Killing Grid. Assembled unit size- 9-3/4 Inch L. x 9-3/4 Inch W x 16-1/2 H
+1 Acre Killing Radius, 40-Watt Bulb , The cord is 9” in length
+Instantaneous Operation,Continuous and Uninterrupted Service
+This product is for outdoor use only.
+Price:$98.08

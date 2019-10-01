@@ -3,6 +3,21 @@ body{
     color: white;
 }
 
+.black{
+    color: black;
+}
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.item-padding{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
 .pat-nav{
     background-color: black;
 }
@@ -22,6 +37,10 @@ body{
     align-items: center;
 }
 
+.item-center{
+    display: flex;
+    align-items: center;
+}
 img.display{
     width: 400px;
     height: 600px;
