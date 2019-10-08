@@ -38,20 +38,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-text">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><h5><img src="./img/cart.png" class="png">Cart<span class="badge">2</span></h5></a>
-                        </li>
-                            
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><h5>Sign Up</h5></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><h5>Log In</h5></a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
         </header>
 
@@ -110,7 +96,7 @@
                                     <option value="any">Any</option>
                                     <option value="high">High</option>
                                     <option value="medium">Medium</option>
-                                    <option value="slow">Slow</option>
+                                    <option value="slow">Low</option>
                                 </select>
                             </p>
                         </div>
@@ -164,52 +150,39 @@
             </div>
         </nav>
 
-        
+        <?php
+            $conn = @mysqli_connect("us-cdbr-iron-east-05.cleardb.net", "ba4be300989f85", "685a4ee7", "heroku_6479816064ccda3");
 
-        <div class="container">
-            <div class="row">
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Fruit-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fruit Apple ROYAL GALA</h5>
-                            <p class="card-text black">$120.00</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Fruit-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fruit Apple ROYAL GALA</h5>
-                            <p class="card-text black">$120.00</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Fruit-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fruit Apple ROYAL GALA</h5>
-                            <p class="card-text black">$120.00</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Fruit-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fruit Apple ROYAL GALA</h5>
-                            <p class="card-text black">$120.00</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            if (!$conn) {
+                // Displays an error message
+                echo "<p>Database connection failure</p>\n";
+            } else {
+                $query = "SELECT * FROM tree_infor";
+                $result = mysqli_query($conn, $query);
+                if(!$result)
+				echo "<p>Something is wrong with ",	$query, "</p>\n";
+			    else{
+                    echo "<div class=\"container\">\n";
+                        echo "<div class=\"row\">\n";
+                            while ($row = mysqli_fetch_assoc($result)){
+					            echo "<div class=\"item-padding col-lg-3\" align=\"center\">";
+                                    echo "<div class=\"col-10 card\" style=\"width: 18rem;\">";
+                                        echo "<img src=\"./treeinfor/".$row["category"]."-".$row["category_id"].".jpg\" class=\"card-img-top\" alt=\"...\">";
+                                        echo "<div class=\"card-body\">";
+                                            echo "<h5 class=\"card-title black\">".$row["name"]."</h5>";
+                                            echo "<p class=\"card-text black\">".$row["description"]."</p><hr>";
+                                            echo "<p class=\"card-text black\">Max Height: ".$row["max_height"]."m</p><hr>";
+                                            echo "<p class=\"card-text black\">$".$row["price_range"]."</p>";
+                                            echo "<a href=\"#\" class=\"btn btn-primary\">Add to Cart</a>";
+                                        echo "</div>";
+                                    echo "</div>";
+					            echo "</div>";
+				            }
+                        echo "</div>";
+                    echo "</div>";
+                }
+            }
+        ?>
 
         <footer>
             <nav class="navbar pat-nav navbar-expand-lg navbar-dark">
