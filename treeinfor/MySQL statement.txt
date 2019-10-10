@@ -12,6 +12,9 @@ INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_requ
 VALUES('Fruit tree', 1, 'Fruit Apple ROYAL GALA', 'Medium', 'Medium', 'Low', 2, 'Medium', '120.00', 'Can grow sweet and juicy flavour, good crisp eating apple. Regular and reliable.');
 ('Fruit tree', 2, 'Fruit-Lemon-YEN BEN', 'Medium', 'Medium', 'Low', 1.4, 'Low', '120.00', 'Dark green leaves and a good bearer of fruit.');
 ('Fruit tree', 3, 'Fruit-Peach-BLACK BOY', 'Medium', 'Medium', 'Medium', 2.5, 'Medium', '120.00', 'Port wine flesh, red to black skin.</br></br>Very sweet and juicy.</br></br>Shows resistance to leaf curl.');
+('Fruit tree', 4, 'Fruit-Nectarin-Fillery', 'Fast', 'Sunny', 'High', 2, 'Medium', '150.00', 'Freestone, golden fleshed and sweet.Healthy vigorous cropper.</br></br>');
+('Fruit tree', 5, 'Fruit-Orange-Fukumoto', 'Low', 'Medium', 'High', 2, 'Medium', '100.00', 'Sweet juicy naval orange. Ripens late winter.</br></br>prefers sunny well drained fertile soil. 1.75 x 1.25m</br></br>');
+
 
 Hedge
 ------------------------------------------------
@@ -23,7 +26,10 @@ Evergreen
 ------------------------------------------------
 INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
 VALUES('Evergreen', 1, 'Semi-Evergreen Alder', 'Slow', 'Sunny', 'Low', 2, 'Medium', '249.00', 'Semi-Evergreen Alder</br></br>Originates from Mexico and Central America. Is a rapid growing tree with clean, tapered leaves at 5 ¨C 12cm. leaves have serrated margins and prominent veins. Semi-Evergreen, grow to 6 x 4m.</br></br>Suitable for: Shelter belts & avenues, topiary</br></br>Features: Semi-evergreen, great formal effect</br></br>Botanical Name: ALNUS jorullensis</br></br>');
-('Evergreen', 2, 'Queensland kauri', 'Slow', 'Sunny', 'Medium', 9, 'Low', '3590.00', 'Fast Growing.Larger leaves than NZ Kauri.</br></br>Erect pyramidal tree. Young leaves are bronze.</br></br>');
+('Evergreen', 2, 'Queensland kauri', 'Slow', 'Sunny', 'Medium', 9, 'High', '3590.00', 'Fast Growing.Larger leaves than NZ Kauri.</br></br>Erect pyramidal tree. Young leaves are bronze.</br></br>');
+('Evergreen', 3, 'Cordyline Australis', 'Slow', 'Sunny', 'Low', 1.5, 'Low', '120.00', 'Arching sword like deep green leaves, forming a broad head and clean trunk.</br></br>');Grows 6x2m.</br></br>');
+('Evergreen', 4, 'Hymenosporum Flavum', 'Medium', 'Sunny', 'Low', 2.5, 'Medium', '200.00', 'Open branching tree smothered in scented yellow flowers. Shelter from winds.</br></br>Grows 6mx3m.</br></br>');
+('Evergreen', 5, 'Magnolia Grandiflora Ferruginea', 'Medium', 'Sunny', 'Medium', 3, 'High', '350.00', 'Large glossy green foliage with rust colour underleaf. Large fragrant white flowers.</br></br>Grows 7mx5m.</br></br>');
 
 NZ native
 ------------------------------------------------
