@@ -30,3 +30,50 @@ Tree catergory:PALM-Kwemadec Nikau
 AVAILABILITY : UNAVAILABLE
 SUITABILITY: SHEITER
 PRICE :  $350.00 (1-1.5m)
+
+
+-------------------------------------------------------------------------------------------
+Category: Fruit tree
+Category_ID: 2
+Name: Fruit-Lemon-YEN BEN
+PRICE 1: 120.00(1.4m)
+Infor: 
+Dark green leaves and a good bearer of fruit.</br></br>
+
+-------------------------------------------------------------------------------------------
+Category: Fruit tree
+Category_ID: 3
+Name: Fruit-Peach-BLACK BOY
+PRICE: 120.00(2-2.5m)
+Infor: 
+Port wine flesh, red to black skin. Very sweet and juicy.</br></br>
+Shows resistance to leaf curl.</br></br>
+
+-------------------------------------------------------------------------------------------
+Category: Evergreen
+Category_ID: 2
+Name: Queensland kauri
+PRICE: 3590.00 (9m) 
+Infor: 
+Fast Growing.Larger leaves than NZ Kauri.</br></br>
+Erect pyramidal tree. Young leaves are bronze.</br></br>
+
+-------------------------------------------------------------------------------------------
+Category: NZ Native
+Category_ID: 2
+Name: Pseudopanax Gceko Gold
+PRICE: 120.00 (1.5m)
+Infor: 
+Erect, neat variegated sport of 'Cyril Watson'.</br></br>
+Glossy rounded leaves have heavy splashes of bright yellow.</br></br>
+A hardy shrub that provides colour and will happily grow in large pots.</br></br>
+
+-------------------------------------------------------------------------------------------
+Category: Palm
+Category_ID: 2
+Name: Kwemadec Nikau
+PRICE: 350.00 (1-1.5m)
+Infor: 
+Very similar to the N.Z.</br></br>
+Nikau but a little faster growing. Need shelter when young.</br></br>
+
