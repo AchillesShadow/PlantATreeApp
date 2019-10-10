@@ -1,0 +1,50 @@
+mysql://ba4be300989f85:685a4ee7@us-cdbr-iron-east-05.cleardb.net/heroku_6479816064ccda3?reconnect=true
+
+ba4be300989f85
+
+685a4ee7
+
+us-cdbr-iron-east-05.cleardb.net
+
+Fruit Tree
+---------------------------------------------
+INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
+VALUES('Fruit tree', 1, 'Fruit Apple ROYAL GALA', 'Medium', 'Medium', 'Low', 2, 'Medium', '120.00', 'Can grow sweet and juicy flavour, good crisp eating apple. Regular and reliable.');
+('Fruit tree', 2, 'Fruit-Lemon-YEN BEN', 'Medium', 'Medium', 'Low', 1.4, 'Low', '120.00', 'Dark green leaves and a good bearer of fruit.');
+('Fruit tree', 3, 'Fruit-Peach-BLACK BOY', 'Medium', 'Medium', 'Medium', 2.5, 'Medium', '120.00', 'Port wine flesh, red to black skin.</br></br>Very sweet and juicy.</br></br>Shows resistance to leaf curl.');
+('Fruit tree', 4, 'Fruit-Nectarin-Fillery', 'Fast', 'Sunny', 'High', 2, 'Medium', '150.00', 'Freestone, golden fleshed and sweet.Healthy vigorous cropper.</br></br>');
+('Fruit tree', 5, 'Fruit-Orange-Fukumoto', 'Low', 'Medium', 'High', 2, 'Medium', '100.00', 'Sweet juicy naval orange. Ripens late winter.</br></br>prefers sunny well drained fertile soil. 1.75 x 1.25m</br></br>');
+
+
+Hedge
+------------------------------------------------
+INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
+VALUES('Hedge', 1, 'Artificial Hedge Wall Creeping Fuschia', 'Fast', 'Medium', 'Low', 0.5, 'Slow', '199.99', 'Get the greenery without the grief with our awesome artificial hedge tiles.</br></br>Transform almost any surface, indoor or outdoor, quickly and easily with these lifelike creeping fuscia hedge panels.</br></br>Gain instant privacy and style with a hedge wall on your patio or in your garden, keep noise down and add texture and vibrancy to office walls, dividers and retail spaces, or even take the greenery inside to your living areas.</br></br>Mounted on plastic mesh, installation is super easy and the panels can be attached to any number of surfaces as well as to other panels. Curved, bumpy, round or smooth, these panels can be altered to fit any surface, including cutting them to fit in those awkward corners.</br></br>Using 100% fresh PE with built in UV protection, these panels will be looking great for years to come, all without requiring any maintenance.</br></br>Add some year round lush greenery to your life by ordering today.</br></br>FEATURES</br></br>Ultra-realistic creeping fuscia design</br></br>100% fresh UV stabilised PE</br></br>Safe for children and pets</br></br>Lightweight and easy to install</br></br>Suitable for indoor and outdoor use</br></br>');
+
+
+Evergreen
+------------------------------------------------
+INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
+VALUES('Evergreen', 1, 'Semi-Evergreen Alder', 'Slow', 'Sunny', 'Low', 2, 'Medium', '249.00', 'Semi-Evergreen Alder</br></br>Originates from Mexico and Central America. Is a rapid growing tree with clean, tapered leaves at 5 ¨C 12cm. leaves have serrated margins and prominent veins. Semi-Evergreen, grow to 6 x 4m.</br></br>Suitable for: Shelter belts & avenues, topiary</br></br>Features: Semi-evergreen, great formal effect</br></br>Botanical Name: ALNUS jorullensis</br></br>');
+('Evergreen', 2, 'Queensland kauri', 'Slow', 'Sunny', 'Medium', 9, 'Low', '3590.00', 'Fast Growing.Larger leaves than NZ Kauri.</br></br>Erect pyramidal tree. Young leaves are bronze.</br></br>');
+('Evergreen', 3, 'Cordyline Australis', 'Slow', 'Sunny', 'Low', 1.5, 'Low', '120.00', 'Arching sword like deep green leaves, forming a broad head and clean trunk.</br></br>');Grows 6x2m.</br></br>');
+('Evergreen', 4, 'Hymenosporum Flavum', 'Medium', 'Sunny', 'Low', 2.5, 'Medium', '200.00', 'Open branching tree smothered in scented yellow flowers. Shelter from winds.</br></br>Grows 6mx3m.</br></br>');
+('Evergreen', 5, 'Magnolia Grandiflora Ferruginea', 'Medium', 'Sunny', 'Medium', 3, 'Fast', '350.00', 'Large glossy green foliage with rust colour underleaf. Large fragrant white flowers.</br></br>Grows 7mx5m.</br></br>');
+
+NZ native
+------------------------------------------------
+INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
+VALUES('NZ native', 1, 'Astelia Fragans', 'Fast', 'Shade', 'Medium', 1, 'Fast', '15.60', 'Arching flax like leaves. Very good for planting under large trees where it is difficult to establish other plants. Flowers are honey scented - hence the name fragrans.');
+('NZ native', 2, 'Pseudopanax Gceko Gold', 'Slow', 'Medium', 'Low', 1.5, 'Fast', '120.00', 'Erect, neat variegated sport of 'Cyril Watson'.</br></br>Glossy rounded leaves have heavy splashes of bright yellow.</br></br>A hardy shrub that provides colour and will happily grow in large pots.</br></br>');
+('NZ native', 3, 'Kowhai', 'Medium', 'Sunny', 'High', 2.5, 'Medium', '285.00', 'Smaller leaves, golden yellow 45mm flowers.</br></br>Grows 5mx3m.</br></br>');
+('NZ native', 4, 'Rimu', 'Medium', 'Medium', 'Low', 2.5, 'Fast', '120.00', 'Slow growing graceful native tree.Grows.</br></br>6mx3m.</br></br>');
+('NZ native', 5, 'Pseudopanax Lessonii', 'Medium', 'Medium', 'High', 2, 'Low', '120.00', 'Small spreading tree.</br></br> Northern coastal. </br></br>Hardy- tolerates wind, salt, dry spells.</br></br>Attractive lush foliage year round, with bright green new growth.</br></br>Small black seeds attract small birds.</br></br> Excellent species for tough dry sandy conditions. 3-5m x 2m.</br></br>');
+
+
+
+Palm tree
+------------------------------------------------
+INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
+VALUES('Palm tree', 1, 'Rogue Areca Palm', 'Fast', 'Medium', 'High', 1.5, 'Medium', '169.00', 'It\'s perfect for adding a lush island vibe to your apartment, halls, entrances, living rooms, bedrooms or anywhere else you want to create a green airy feel.');
+('Palm tree', 2, 'Kwemadec Nikau', 'Fast', 'Sunny', 'High', 1.5, 'Medium', '350.00', 'Very similar to the N.Z.</br></br>Nikau but a little faster growing. Need shelter when young.</br></br>');
+('Palm tree', 3, 'Queen Palm', 'Medium', 'Sunny', 'Medium', 2.5, 'Medium', '450.00', 'Most rapid growth is in spring and summer so water well at this time.</br></br>');

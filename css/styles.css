@@ -41,6 +41,12 @@ body{
     display: flex;
     align-items: center;
 }
+
+.card-center{
+    display: inline-block;
+    align-items: center;
+}
+
 img.display{
     width: 400px;
     height: 600px;
@@ -115,4 +121,22 @@ img.png{
 .relatedproduct{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.text-about-contact{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 26px;
+}
+
+.card-img-top {
+    -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 200px;
+}
+
+.item-margin-left{
+    margin-left: 20px;
 }

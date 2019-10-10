@@ -13,10 +13,10 @@
                     'item_quantity' => $_POST["quantity"],
                 );
                 $_SESSION["cart"][$count] = $item_arrary;
-                echo "<script>window.location=\"treeshop.php\"</script>";
+                echo "<script>window.location=\"relatedproduct.php\"</script>";
             } else{
                 echo "<script>alert(\"Product is already Added to Cart\")</script>";
-                echo "<script>window.location=\"treeshop.php\"</script>";
+                echo "<script>window.location=\"relatedproduct.php\"</script>";
             }
         } else{
             $item_array = array(
@@ -35,7 +35,7 @@
                 if($value["product_id"] == $_GET["id"]){
                     unset($_SESSION["cart"][$keys]);
                     echo "<script>alert(\"Product has been Removed!\")</script>";
-                    echo "<script>window.location=\"treeshop.php\"</script>";
+                    echo "<script>window.location=\"relatedproduct.php\"</script>";
                 }
             }
         }
@@ -89,50 +89,42 @@
             <h1 class="text-center">Related Product</h1>
         </div>
         
-           <div class="container">
-            <div class="row">
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Product-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fibreglass Shovel</h5>
-                            <p class="card-text black">$53.79</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Product-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Garden Time Fertiliser 5KG</h5>
-                            <p class="card-text black">$9.93</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Product-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Daltons 40L Big Value Potting Mix</h5>
-                            <p class="card-text black">$6.75</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-padding col-lg-3" align="center">
-                    <div class="col-10 card" style="width: 18rem;">
-                        <img src="./treeinfor/Product-4_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title black">Fruit Fly BarPro</h5>
-                            <p class="card-text black">$9.93</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+            $conn = @mysqli_connect("us-cdbr-iron-east-05.cleardb.net", "ba4be300989f85", "685a4ee7", "heroku_6479816064ccda3");
+
+            if (!$conn) {
+                // Displays an error message
+                echo "<p>Database connection failure</p>\n";
+            } else {
+                $query = "SELECT * FROM related_prod";
+                $result = mysqli_query($conn, $query);
+
+                if(!$result)
+                echo "<p>Something is wrong with ",	$query, "</p>\n";
+                else{
+                    echo "<div class=\"container\">\n";
+                        echo "<div class=\"row\">\n";
+                            while ($row = mysqli_fetch_assoc($result)){
+                                echo "<form method=\"POST\" action=\"relatedproduct.php?action=add&id=".$row["id"]."\" class=\"item-padding col-lg-3 col-sm-12\" align=\"center\">\n";
+                                    echo "<div class=\"col-12 card\" align=\"center\" style=\"width: 18rem;\">\n";
+                                        echo "<img src=\"./treeinfor/".$row["category"]."-".$row["category_id"].".jpg\" class=\"card-img-top\" alt=\"...\">\n";
+                                        echo "<div class=\"card-body\">\n";
+                                            echo "<h5 class=\"card-title black\">".$row["name"]."</h5>\n";
+                                            echo "<p class=\"card-text black\">".$row["description"]."</p><hr>\n";
+                                            echo "<p class=\"card-text black\">Quantity:<input type=\"text\" name=\"quantity\" class=\"form-control  text-center\" value=\"1\"></p><hr>\n";
+                                            echo "<p class=\"card-text black\">$".$row["price_range"]."</p>\n";
+                                            echo "<input type=\"hidden\" name=\"hidden_name\" value=\"".$row["name"]."\">\n";
+                                            echo "<input type=\"hidden\" name=\"hidden_price\" value=\"".$row["price_range"]."\">\n";
+                                            echo "<input type=\"submit\" name=\"add\" class=\"btn btn-primary\" value=\"Add to Cart\">\n";
+                                        echo "</div>\n";
+                                    echo "</div>\n";
+                                echo "</form>\n";
+                            }
+                        echo "</div>\n";
+                    echo "</div>\n";
+                }
+            }
+        ?>
             
         <h1 class="text-center">Shopping Cart</h1>
         <table class="table table-striped table-dark">
@@ -153,10 +145,10 @@
                             $p_total = number_format($value["item_quantity"]*$value["product_price"], 2);
                             echo "<tr>";
                                 echo "<th>".$value["item_name"]."</th>";
-                                echo "<td>".$value["product_price"]."</td>";
+                                echo "<td>$".$value["product_price"]."</td>";
                                 echo "<td>".$value["item_quantity"]."</td>";
-                                echo "<td><a href=\"treeshop.php?action=delete&id=".$value["product_id"]."\"><span class=\"text-danger\">Remove Item</span></a></td>";
-                                echo "<td>".$p_total."</td>";
+                                echo "<td><a href=\"relatedproduct.php?action=delete&id=".$value["product_id"]."\"><span class=\"text-danger\">Remove Item</span></a></td>";
+                                echo "<td>$".$p_total."</td>";
                             echo "</tr>";
 
                             $total = $total + ($value["item_quantity"]*$value["product_price"]);
@@ -175,7 +167,6 @@
                                 </select>
                             </td>";
 
-                            echo "<script>document.getElementbyName('shippment').value</script>";
                             echo "<th aligh=\"right\">$".$val."</th>";
                         echo "</tr>";
 
@@ -185,11 +176,16 @@
                             echo "<td colspan=\"4\" align=\"right\">Total</td>";
                             echo "<th aligh=\"right\">$".$f_total."</th>";
                         echo "</tr>";
+
+                        echo "<tr>";
+                            echo "<td colspan=\"4\"></td>";
+                            echo "<th align=\"left\"><a class=\"btn btn-primary\" href=\"#\">Pay</a></th>";
+                        echo "</tr>";
                     }
                 ?>
             </tbody>
         </table>
-
+        
         <footer>
             <nav class="navbar pat-nav navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="./index.html"><h3>TreeCo</h3></a>

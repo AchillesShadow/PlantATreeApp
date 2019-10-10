@@ -11,19 +11,53 @@ Tree ID: PALM-1
 Tree catergory:PALM Queenpalm
 PRICE :$120(2-2.5m) 
 
-Tree ID:Fruit-1
-Tree catergory:Fruit-Apple1-ROYAL GALA (SEMI DWARF)
-AVAILABILITY : AVAILABLE
-SUITABILITY: All
-PRICE 1:$120.00 (2m)
-Sweet and juicy flavour,good crisp eating apple.
-Regular and reliable.
-
 Tree ID:Fruit-2
 Tree catergory:Fruit-Apple2-BRAEBURN SEMI DWARF
 AVAILABILITY : UNAVAILABLE
 SUITABILITY: All
 PRICE : $120.00 (1.5-2m)
 Sweet and tangy eating. Good heavy cropper.
+
+-------------------------------------------------------------------------------------------
+Category: Fruit tree
+Category_ID: 1
+Name: Fruit-Apple1-ROYAL GALA (SEMI DWARF)
+PRICE 1:$120.00 (2m)
+Infor: 
+This popular apple settles on a rich flavour accompanied by crisp, dense, and aromatic flesh.
+
+-------------------------------------------------------------------------------------------
+Category: Hedge
+Category_ID: 1
+Name: Artificial Hedge Wall Creeping Fuschia
+Price: 199 (0.5m)
+Minimal maintenance
+Infor: 
+Gain instant privacy and style with a hedge wall on your patio or in your garden.
+
+-----------------------------------------------------------------------------------------------------
+Category: Evergreen
+Category_ID: 1
+Name: Semi-Evergreen Alder
+Price: 249
+Infor:
+Is a rapid growing tree with clean, tapered leaves at 5 ¨C 12cm.
+
+-----------------------------------------------------------------------------------------------------
+Category: NZ native
+Category_ID: 1
+Name: Astelia Fragans
+Price: 15.60(1M)
+Infor:
+Flowers are honey scented - hence the name fragrans.
+
+-------------------------------------------------------------------------------------------------------
+Category: Palm tree
+Category_ID: 1
+Name: Rogue Areca Palm
+Price: 169
+Infor:
+To create a green airy feel.
+
 
 
