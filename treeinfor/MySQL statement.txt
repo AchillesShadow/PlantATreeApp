@@ -26,20 +26,25 @@ Evergreen
 ------------------------------------------------
 INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
 VALUES('Evergreen', 1, 'Semi-Evergreen Alder', 'Slow', 'Sunny', 'Low', 2, 'Medium', '249.00', 'Semi-Evergreen Alder</br></br>Originates from Mexico and Central America. Is a rapid growing tree with clean, tapered leaves at 5 ¨C 12cm. leaves have serrated margins and prominent veins. Semi-Evergreen, grow to 6 x 4m.</br></br>Suitable for: Shelter belts & avenues, topiary</br></br>Features: Semi-evergreen, great formal effect</br></br>Botanical Name: ALNUS jorullensis</br></br>');
-('Evergreen', 2, 'Queensland kauri', 'Slow', 'Sunny', 'Medium', 9, 'High', '3590.00', 'Fast Growing.Larger leaves than NZ Kauri.</br></br>Erect pyramidal tree. Young leaves are bronze.</br></br>');
+('Evergreen', 2, 'Queensland kauri', 'Slow', 'Sunny', 'Medium', 9, 'Low', '3590.00', 'Fast Growing.Larger leaves than NZ Kauri.</br></br>Erect pyramidal tree. Young leaves are bronze.</br></br>');
 ('Evergreen', 3, 'Cordyline Australis', 'Slow', 'Sunny', 'Low', 1.5, 'Low', '120.00', 'Arching sword like deep green leaves, forming a broad head and clean trunk.</br></br>');Grows 6x2m.</br></br>');
 ('Evergreen', 4, 'Hymenosporum Flavum', 'Medium', 'Sunny', 'Low', 2.5, 'Medium', '200.00', 'Open branching tree smothered in scented yellow flowers. Shelter from winds.</br></br>Grows 6mx3m.</br></br>');
-('Evergreen', 5, 'Magnolia Grandiflora Ferruginea', 'Medium', 'Sunny', 'Medium', 3, 'High', '350.00', 'Large glossy green foliage with rust colour underleaf. Large fragrant white flowers.</br></br>Grows 7mx5m.</br></br>');
+('Evergreen', 5, 'Magnolia Grandiflora Ferruginea', 'Medium', 'Sunny', 'Medium', 3, 'Fast', '350.00', 'Large glossy green foliage with rust colour underleaf. Large fragrant white flowers.</br></br>Grows 7mx5m.</br></br>');
 
 NZ native
 ------------------------------------------------
 INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
 VALUES('NZ native', 1, 'Astelia Fragans', 'Fast', 'Shade', 'Medium', 1, 'Fast', '15.60', 'Arching flax like leaves. Very good for planting under large trees where it is difficult to establish other plants. Flowers are honey scented - hence the name fragrans.');
 ('NZ native', 2, 'Pseudopanax Gceko Gold', 'Slow', 'Medium', 'Low', 1.5, 'Fast', '120.00', 'Erect, neat variegated sport of 'Cyril Watson'.</br></br>Glossy rounded leaves have heavy splashes of bright yellow.</br></br>A hardy shrub that provides colour and will happily grow in large pots.</br></br>');
+('NZ native', 3, 'Kowhai', 'Medium', 'Sunny', 'High', 2.5, 'Medium', '285.00', 'Smaller leaves, golden yellow 45mm flowers.</br></br>Grows 5mx3m.</br></br>');
+('NZ native', 4, 'Rimu', 'Medium', 'Medium', 'Low', 2.5, 'Fast', '120.00', 'Slow growing graceful native tree.Grows.</br></br>6mx3m.</br></br>');
+('NZ native', 5, 'Pseudopanax Lessonii', 'Medium', 'Medium', 'High', 2, 'Low', '120.00', 'Small spreading tree.</br></br> Northern coastal. </br></br>Hardy- tolerates wind, salt, dry spells.</br></br>Attractive lush foliage year round, with bright green new growth.</br></br>Small black seeds attract small birds.</br></br> Excellent species for tough dry sandy conditions. 3-5m x 2m.</br></br>');
+
 
 
 Palm tree
 ------------------------------------------------
 INSERT INTO tree_infor(category, category_id, name, soil_drainage, sunshine_require, maintenance_requirements, max_height, growth_rate, price_range, description)
 VALUES('Palm tree', 1, 'Rogue Areca Palm', 'Fast', 'Medium', 'High', 1.5, 'Medium', '169.00', 'It\'s perfect for adding a lush island vibe to your apartment, halls, entrances, living rooms, bedrooms or anywhere else you want to create a green airy feel.');
-VALUES('Palm tree', 2, 'Kwemadec Nikau', 'Fast', 'Sunny', 'High', 1.5, 'Medium', '350.00', 'Very similar to the N.Z.</br></br>Nikau but a little faster growing. Need shelter when young.</br></br>');
+('Palm tree', 2, 'Kwemadec Nikau', 'Fast', 'Sunny', 'High', 1.5, 'Medium', '350.00', 'Very similar to the N.Z.</br></br>Nikau but a little faster growing. Need shelter when young.</br></br>');
+('Palm tree', 3, 'Queen Palm', 'Medium', 'Sunny', 'Medium', 2.5, 'Medium', '450.00', 'Most rapid growth is in spring and summer so water well at this time.</br></br>');
